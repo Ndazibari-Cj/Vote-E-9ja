@@ -1,0 +1,17 @@
+.hero-container {
+    background-image:url(assets/Images/Backgroundimage1.jpeg); /* Adjust the path as necessary */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+}
+.Register-link{
+    color: black !important;
+}
+.Register-link:hover{
+    color: rgb(90, 90, 236) !important;
+    transition: 0.3s ease;
+}

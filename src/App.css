@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x:hidden;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+.hero-container a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.button-div{
+    display: flex;
+}
+.hero-container .Admin-button,
+.hero-container .participant-button { 
+  padding: 15px 40px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+}
+.hero-container .Admin-button {
+  background-color: black;
+  color: white;
+}
+.hero-container .Admin-button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+.hero-container .participant-button {
+  background-color: white;
+  color: black;
+}
+.hero-container .participant-button:hover{
+    background-color: rgb(224, 222, 222);
+    color: black;
+    border: 1px solid black;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    gap: 20px;
+}
+.nav-bar-links {
+  display: flex;
+  justify-content: flex-end ;
+  margin-top: 15px;
+  gap: 40px;
+  padding: 10px 20px;
+  background-color: white;
+}
+.nav-bar-links a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+}
+.nav-bar-links a:hover{
+    color: rgb(85, 79, 79);
+    transition: 0.3s ease;
+}
+.sign-up-button {
+  padding: 10px 20px ;
+  background-color:black;
+  color: white;
+  border: none;
+  display: flex;
+  margin-top: -8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sign-up-button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+
+}
+.about-container{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    padding: 0px;
+
+}
+.v-span{
+    color: rgb(179, 27, 27);
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.hamburger div{
+    height: 2px;
+    width: 20px;
+    margin: 2px;
+    background-color: black;
+    border: 1px solid black;
+
+}
+@media(max-width:900px){
+    .nav-bar-links{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        margin-top: 20px;
+    }
+    .nav-bar-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(170, 169, 169);
+        width: 100%;
+        padding: 10px 0;
+    }
+    .nav-bar-links.active a {
+        margin: 10px 0;
+        padding: 10px 20px 10px 30px;
+    }
+    .hero-container {
+        height: 100vh;
+        padding: 20px;
+    }
+
+}
+
+
+
