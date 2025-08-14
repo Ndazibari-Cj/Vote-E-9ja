@@ -93,6 +93,7 @@ nav{
     text-align: center;
     display: flex;
     flex-direction: column;
+    
 }
 .logo{
     height: 50px;
@@ -126,6 +127,11 @@ nav{
     .hamburger{
         display: flex;
         margin-top: 20px;
+        padding: 5px;
+        border: 1px solid rgba(128, 125, 125, 0.699);
+        margin-bottom: 2px;
+        background-color: rgba(245, 245, 245, 0.336);
+        border-radius: 2px;
     }
     .nav-bar-links.active {
         display: flex;
@@ -133,14 +139,16 @@ nav{
         position: absolute;
         top: 60px;
         right: 0;
-        background-color: rgb(170, 169, 169);
+        background-color: rgb(216, 224, 237);
         width: 100%;
         padding: 10px 0;
     }
     .nav-bar-links.active a {
         margin: 10px 0;
-        padding: 10px 20px 10px 30px;
+        padding: 10px 20px 10px 30px; 
+
     }
+
     .hero-container {
         height: 100vh;
         padding: 20px;
